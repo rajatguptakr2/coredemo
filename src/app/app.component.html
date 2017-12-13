@@ -1,0 +1,17 @@
+<div *ngIf="status">
+    This is DefaultData :- {{DefaultData}}
+    <br> This is Current Status:- {{status}}
+
+    <div *ngFor="let list of appList">
+        <table>
+            <tr>
+                <th>SN.</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>{{list.ID}}</td>
+                <td>{{list.Name}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
